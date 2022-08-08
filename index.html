@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
+    <title>Color-Palette-Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <input type="color" required id="seed-color-select">
+            <div class="search-box move">
+                <div class="options-box">
+                    <div class="option">Monochrome</div>
+                    <div class="option">Monochrome-Dark</div>
+                    <div class="option">Monochrome-Light</div>
+                    <div class="option">Analogic</div>
+                    <div class="option">Complement</div>
+                    <div class="option">Analogic-Complement</div>
+                    <div class="option">Triad</div>
+                </div>
+            </div>
+            <div class="selected-box">
+                <input class="selected" value="Chose Color Scheme Mode"></input>
+                <img src="Selector.png" alt="" id="drop">
+            </div>
+            <button id="get-scheme">Get color scheme</button>
+        </header>
+        <main>
+            <div class="first-color color-box"></div>
+            <div class="second-color color-box"></div>
+            <div class="third-color color-box"></div>
+            <div class="fourth-color color-box"></div>
+            <div class="fifth-color color-box"></div>
+        </main>
+        <footer>
+            <div class="first-color-code color-code"></div>
+            <div class="second-color-code color-code"></div>
+            <div class="third-color-code color-code"></div>
+            <div class="fourth-color-code color-code"></div>
+            <div class="fifth-color-code color-code"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
